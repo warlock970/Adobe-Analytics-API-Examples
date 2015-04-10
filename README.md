@@ -1,5 +1,5 @@
 # Adobe-Analytics-API-Examples
-This Repository contains two very basic examples of Adobe Analytics API usage.
+This Repository contains some very basic examples of Adobe Analytics API usage.
 
 #Basic OAuth.php
 Basic OAuth.php shows a very basic example of how to use PHP and cURL to fire API calls
