@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 
 $host = 'https://api.omniture.com/token';
 $data = 'grant_type=client_credentials';
-$headerArr = '65b5501e18-move-test:594658532803bd956a90';
+$headerArr = 'application-username:application-secret';
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -30,7 +30,7 @@ $host = 'https://api.omniture.com/admin/1.4/rest/?method=Report.Run';
 $data='
 {
 	"reportDescription":{
-		"reportSuiteID":"lscswarlock",
+		"reportSuiteID":"(rsid)",
 		"dateFrom":"2 hours ago",
 		"dateTo":"now",
 		"dateGranularity":"minute:60",

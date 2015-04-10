@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 $host = 'https://api.omniture.com/admin/1.4/rest/?method=Report.Run';
 $data='{
 	"reportDescription":{
-		"reportSuiteID":"lscswarlock",
+		"reportSuiteID":"[rsid]",
 		"dateFrom":"2 hours ago",
 		"dateTo":"now",
 		"dateGranularity":"minute:60",
@@ -28,8 +28,8 @@ $data='{
 
 $nonce = md5(rand(), TRUE);
 $created = gmdate('Y-m-d\TH:i:sO');
-$username = "tushar:Cardgage Corp";
-$sharedSecret = "917ea25ae965a329985ef415b60b2132";
+$username = "[WEB SERVICES USERNAME]";
+$sharedSecret = "[WEB SERVICES PASSWORD]";
 $b64nonce = base64_encode($nonce);
 $passwordDigest = base64_encode(sha1($nonce . $created . $sharedSecret, TRUE));
 
